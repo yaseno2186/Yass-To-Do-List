@@ -27,6 +27,7 @@ public class Main {
                 System.out.println("Your current list is: ");
                 tasks.forEach(System.out::println);
             break;
+            // we whatt
             }
         }
     }
