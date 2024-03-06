@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
-
-    public static Scanner inputsNum = new Scanner(System.in);
     public static boolean dare(String YorN) {
         return YorN.contains("y") || YorN.contains("+");
     }
@@ -26,9 +23,8 @@ public class Main {
                 taskDescription.add(inputs.nextLine());
                 printList();
             } else {
-                printList();
                 System.out.println("Enter a task number to delete: ");
-                taskTitle.remove(inputsNum.nextInt() -1);
+                taskTitle.remove(inputs.nextInt() -1);
                 System.out.println("Deleted it successfully");
                 printList();
                 break;
