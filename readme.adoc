@@ -1,0 +1,76 @@
+= To-Do List Application
+
+== Overview
+
+This project is a simple command-line To-Do List application written in Java. It allows users to add tasks with descriptions to a to-do list, and also remove tasks from the list.
+
+== Features
+
+* Add tasks to the to-do list with a title and description.
+* Remove tasks from the to-do list by specifying the task number.
+* Display the current list of tasks.
+
+== Usage
+
+=== Prerequisites
+
+* Java Development Kit (JDK) 8 or higher.
+
+=== Running the Application
+
+1. Compile the Java source code:
+
+    javac net/Yass/src/Main/Main.java
+
+2. Run the compiled Java program:
+
+    java net.Yass.src.Main.Main
+
+3. Follow the on-screen prompts to interact with the to-do list.
+
+=== Application Flow
+
+1. The application will prompt you if you want to write to-dos.
+2. If you respond with "y" or "+", you will be prompted to enter a task title and description.
+3. If you choose not to add a task, you will be prompted to enter a task number to delete.
+4. The current to-do list will be printed after each addition or deletion of a task.
+
+== Code Structure
+
+* `Main.java`: The main class containing the application logic.
+* `dare(String YorN)`: Determines if the user wants to add a task based on their input.
+* `taskTitle`: An ArrayList holding the titles of the tasks.
+* `taskDescription`: An ArrayList holding the descriptions of the tasks.
+* `addTask`: A boolean flag indicating whether to add a task.
+* `inputs`: A Scanner object for reading user input.
+* `main(String[] args)`: The main method that runs the application.
+* `printList()`: Prints the current to-do list.
+
+== Example
+ ´´´
+Do you want to write To-do's ?
+y
+Enter what to add on the To-do List:
+Buy groceries
+You add on the to do list: Buy groceries
+Enter description:
+Buy milk, eggs, and bread
+Your current list is:
+BUY GROCERIES
+buy milk, eggs, and bread
+Do you want to write To-do's ?
+n
+Enter a task number to delete:
+1
+Deleted it successfully
+Your current list is:
+
+
+== Author
+
+* Yass Almardod
+
+== License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+

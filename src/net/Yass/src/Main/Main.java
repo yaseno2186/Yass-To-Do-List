@@ -7,14 +7,17 @@ public class Main {
     public static boolean dare(String YorN) {
         return YorN.contains("y") || YorN.contains("+");
     }
-    private static final ArrayList<String> taskTitle = new ArrayList<>(5);
-    private static final ArrayList<String> taskDescription = new ArrayList<>(5);
+    public static final ArrayList<String> taskTitle = new ArrayList<>(5);
+    public static final ArrayList<String> taskDescription = new ArrayList<>(5);
+    public static boolean addTask = false;
+    public static Scanner inputs = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner inputs = new Scanner(System.in);
+
         for (int i = 0; i < 5; i++) {
 
             System.out.println("Do you want to write To-do's ?");
-            boolean addTask = dare(inputs.nextLine());
+                addTask = dare(inputs.nextLine());
             if (addTask) {
                 System.out.println("Enter what to add on the To-do List: ");
                 taskTitle.add(inputs.nextLine());
